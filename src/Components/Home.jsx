@@ -13,7 +13,7 @@ const Home = () => {
       <Nav />
       <div className='w-[85%] p-10 px-[5%] flex flex-wrap overflow-x-hidden overflow-y-auto'>
         {products.map((p, i) => (
-          <Link
+          <Link key={p. id}
             to={`/details/${p, i}`}
             className='mr-3 mb-3 card p-3 border shadow rounded w-[18%] h-[30vh] flex-col flex justify-center items-center'
             
